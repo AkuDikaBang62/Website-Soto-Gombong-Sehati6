@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soto Gombong Sehati</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Animated On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Style Ku -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+     <!-- Navbar Start -->
+     <nav class="navbar animate__animated animate__jackInTheBox">
+        <a href="#" class="navbar-logo">Soto<span>SEHATI</span>.</a>
+
+        <div class="navbar-nav">
+            <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati1/"><i data-feather="home"></i>  Home</a>
+            <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati2/"><i data-feather="users"></i>  Tentang Kami</a>
+            <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati3/"><i data-feather="file-text"></i> Visi-Misi</a>
+            <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati4/"><i data-feather="book-open"></i>  Menu</a>
+            <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati5/"><i data-feather="camera"></i> Galeri</a>
+            <a href="index.html"><i data-feather="phone"></i>  Kontak Kami</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="#" id="soto-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+        <div data-aos="flip-up" data-aos-duration="1000" data-aos-offset="100">
+        <h2><span>Kontak</span> Kami ada di bawah ini</h2>
+    <p>Jl. Pisangan Baru Timur No.19, RT.13RW.14, Pisangan Baru, Kec. Matraman, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13110</p>
+    </div>
+    <div class="row">
+        <iframe data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4079878584!2d106.86986897402498!3d-6.209797560824848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f50060e37e0b%3A0xecb5752434d41186!2sSoto%20Gombong%20SEHATI!5e0!3m2!1sid!2sid!4v1719479456015!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        
+        <form name="f" onsubmit="sendMessage()" method="post">
+            <div class="input-group" data-aos="flip-down" data-aos-duration="1000" data-aos-offset="100">
+                <i data-feather="user"></i>
+                <input class="masukan" id="nama" type="text" value="" name="nama" placeholder="nama" required>
+            </div>
+            <div class="input-group" data-aos="flip-up" data-aos-duration="1000" data-aos-offset="100">
+                <i data-feather="mail"></i>
+                <input class="masukan" id="email" type="text" value="" name="email" placeholder="email" required>
+            </div>
+            <div class="input-group" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="65">
+                <i data-feather="message-circle"></i>
+                <input class="masukan" id="komentar" type="text" value="" name="komentar" placeholder="Pesan" required>
+            </div>
+            <input data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50" class="btn" type="submit" name="thesubmit" value="kirim Pesan" onclick="isiform(this.form)">
+        </form>
+    </div>
+    </section>
+   <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+  <footer id="footer">
+    <div class="social">
+        <a href="https://www.instagram.com/sotogombong_sehati?igsh=NmZpcGdwZTRhcHBn"><i data-feather="instagram"></i></a>
+        <a href="https://gofood.link/a/L5oj687"><img src="./Gojek.png" alt="Ikon"></a>
+        <a href="https://food.grab.com/id/id/restaurant/soto-gombong-sehati-pisangan-baru-delivery/6-C6MXEEAXUFNACE?"><img src="./Grab Icon.jpg" alt="Ikon"></a>
+    </div>
+
+    <div class="links">
+        <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati1/">Home</a>
+        <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati2/">Tentang Kami</a>
+        <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati3/">Visi-Misi</a>
+        <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati4/">Menu</a>
+        <a href="https://akudikabang62.github.io/Website-Soto-Gombong-Sehati5/">Galeri</a>
+        <a href="index.html">Kontak Kami</a>
+    </div>
+
+    <div class="credit">
+        <p>Created By <a href="">SotoGombongSehati</a>. | &copy; 2024.</p>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Feather Icons -->
+<script>
+feather.replace();
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+<!-- My Javascript -->
+<script src="index.js"></script>
+</body>
+</html>

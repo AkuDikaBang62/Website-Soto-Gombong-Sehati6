@@ -1,0 +1,276 @@
+:root{
+    --primary: rgb(255, 56, 56);
+    --bg: rgb(247, 201, 50);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    background: none;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 38, 38);
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(247, 201, 50, 0.8);
+    border-bottom: 1px solid rgb(199, 46, 46);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a{
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.9);
+}
+
+.navbar .navbar-extra a{
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: var(--primary);
+}
+
+#soto-menu{
+    display: none;
+}
+
+/* Campuran */
+.about, .menu, .misi, .gallery, .contact{
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h2, .menu h2, .misi h2, .gallery h2, .contact h2{
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px var(--primary, 1.0);
+}
+
+.about h2 span, .menu h2 span, .misi h2 span, .gallery h2 span, .contact h2 span{
+    color: var(--primary);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1.0);
+}
+
+/* Contact Section */
+.contact .row{
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgb(255, 215, 83);
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 55rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group .masukan{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+.contact .row form .btn{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 2rem;
+}
+
+footer .social{
+    padding: 0.5rem;
+}
+
+footer .social a{
+    color: #fff;
+    margin: 1rem;
+}
+
+footer .social a:hover, footer .links a:hover{
+    color: var(--bg);
+}
+
+footer .links{
+    margin-bottom: 1.4rem;
+}
+
+footer .links a{
+    color: white;
+    padding: 0.7rem 0.4rem;
+}
+
+footer .credit{
+    font-size: 0.8rem;
+    color: white;
+}
+
+footer .credit a{
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* Media queries */
+
+/* Laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 73%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 60.5%;
+    }
+
+    #soto-menu{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
+    /* Contact Section */
+    .contact .row{
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map{
+        height: 30rem;
+    }
+
+    .contact .row form{
+        padding-top: 0;
+    }
+}
+/* Handphone */
+@media (max-width: 450px){
+    html{
+        font-size: 51.5%;
+    }
+}
